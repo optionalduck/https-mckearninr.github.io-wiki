@@ -149,10 +149,33 @@
     color: var(--muted);
   }
   .footer p { margin: 0.4em 0; }
+  
+  /* image with caption box */
+  .thumb {
+    float: right;
+    clear: right;
+    width: 222px;
+    margin: 0.5em 0 1.3em 1.4em;
+    background: var(--infobox-bg);
+    border: 1px solid #c8ccd1;
+    padding: 3px;
+    font-size: 94%;
+  }
+  .thumb.left { float: left; clear: left; margin: 0.5em 1.4em 1.3em 0; }
+  .thumb img { display: block; width: 100%; height: auto; }
+  .thumb .caption { padding: 3px 0 2px; line-height: 1.4; }
 
+  /* redacted text */
+  .redacted {
+    background: #000;
+    color: #000;
+    user-select: none;
+  }
+  
   @media (max-width: 640px) {
     .page { padding: 12px 14px 32px; }
     .infobox { float: none; width: 100%; margin: 0 0 1em 0; }
+    .thumb, .thumb.left { float: none; width: 100%; margin: 0 0 1em 0; }
   }
 </style>
 </head>
@@ -200,6 +223,10 @@
       <th scope="row">Education</th>
       <td><a href="https://en.wikipedia.org/wiki/Rowan_University">Rowan University</a> (<a href="https://en.wikipedia.org/wiki/Bachelor_of_Science">BS</a>)</td>
     </tr>
+    <tr>
+      <th scope="row">Dogs</th>
+      <td><a href="lexi">Lexi</a></td>
+    </tr>
   </table>
 
   <!-- LEAD: first paragraph of the article -->
@@ -207,7 +234,15 @@
 
   <!-- SECTIONS: copy this block to add a new section -->
   <h2>Early life<span class="edit">[<a href="https://github.com/optionalduck/wiki/edit/main/index.html">edit</a>]</span></h2>
-  <p>McKearnin was born in <a href="https://en.wikipedia.org/wiki/Ridgewood,_New_Jersey">Ridgewood, New Jersey</a>, on December 22, 2000. He grew up in <a href="https://en.wikipedia.org/wiki/Wyckoff,_New_Jersey">Wyckoff, New Jersey</a>, the son of a Jewish mother and a Catholic father. In 2015, he moved to <a href="https://en.wikipedia.org/wiki/Glen_Rock,_New_Jersey">Glen Rock, New Jersey</a>. McKearnin graduated from <a href="https://en.wikipedia.org/wiki/Ramapo_High_School_(New_Jersey)">Ramapo High School</a> in 2019.</p>
+  <p>Ryan was born in <a href="https://en.wikipedia.org/wiki/Ridgewood,_New_Jersey">Ridgewood, New Jersey</a>, on December 22, 2000. He grew up in <a href="https://en.wikipedia.org/wiki/Wyckoff,_New_Jersey">Wyckoff, New Jersey</a>, the son of a Jewish mother and a Catholic father. In 2015, he moved to <a href="https://en.wikipedia.org/wiki/Glen_Rock,_New_Jersey">Glen Rock, New Jersey</a>. Ryan graduated from <a href="https://en.wikipedia.org/wiki/Ramapo_High_School_(New_Jersey)">Ramapo High School</a> in 2019.</p>
+
+  <h2>Involment with Israel<span class="edit">[<a href="https://github.com/optionalduck/wiki/edit/main/index.html">edit</a>]</span></h2>
+  <div class="thumb">
+    <img src="images/wall.jpg" alt="Ryan at the Kotel">
+    <div class="caption">Ryan at the <a href="https://en.wikipedia.org/wiki/Western_Wall">Kotel</a>.</div>
+  </div>
+  <p><span class="redacted">There is nothing here, There is nothing here, There is nothing here, There is nothing here, There is nothing here, There is nothing here, There is nothing here, There is nothing here, There is nothing here, There is nothing here, There is nothing here, There is nothing here, There is nothing here, There is nothing here, There is nothing here, </span>.</p>
+  
   <div class="catlinks">
     <a href="https://en.wikipedia.org/wiki/Help:Category">Categories</a>:
     <ul>
